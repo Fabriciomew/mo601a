@@ -1,0 +1,464 @@
+[
+    {
+        "Time per cicle (microseconds)": 5.14,
+        "Code": "134.call",
+        "Cicles": 41386,
+        "Execution time (milliseconds)": "212.83"
+    },
+    {
+        "Time per cicle (microseconds)": 5.22,
+        "Code": "133.call",
+        "Cicles": 2684,
+        "Execution time (milliseconds)": "14.00"
+    },
+    {
+        "Time per cicle (microseconds)": 5.22,
+        "Code": "145.array",
+        "Cicles": 14358,
+        "Execution time (milliseconds)": "74.92"
+    },
+    {
+        "Time per cicle (microseconds)": 5.25,
+        "Code": "146.array",
+        "Cicles": 14626,
+        "Execution time (milliseconds)": "76.80"
+    },
+    {
+        "Time per cicle (microseconds)": 5.35,
+        "Code": "144.array",
+        "Cicles": 14690,
+        "Execution time (milliseconds)": "78.63"
+    },
+    {
+        "Time per cicle (microseconds)": 5.38,
+        "Code": "142.array",
+        "Cicles": 87399,
+        "Execution time (milliseconds)": "470.18"
+    },
+    {
+        "Time per cicle (microseconds)": 5.4,
+        "Code": "143.array",
+        "Cicles": 12451,
+        "Execution time (milliseconds)": "67.30"
+    },
+    {
+        "Time per cicle (microseconds)": 5.41,
+        "Code": "126.loop",
+        "Cicles": 1836,
+        "Execution time (milliseconds)": "9.94"
+    },
+    {
+        "Time per cicle (microseconds)": 5.52,
+        "Code": "122.loop",
+        "Cicles": 962,
+        "Execution time (milliseconds)": "5.31"
+    },
+    {
+        "Time per cicle (microseconds)": 5.68,
+        "Code": "121.loop",
+        "Cicles": 898,
+        "Execution time (milliseconds)": "5.10"
+    },
+    {
+        "Time per cicle (microseconds)": 5.84,
+        "Code": "141.array",
+        "Cicles": 1275,
+        "Execution time (milliseconds)": "7.45"
+    },
+    {
+        "Time per cicle (microseconds)": 5.92,
+        "Code": "131.call",
+        "Cicles": 98,
+        "Execution time (milliseconds)": "0.58"
+    },
+    {
+        "Time per cicle (microseconds)": 6.1,
+        "Code": "044.sub",
+        "Cicles": 608,
+        "Execution time (milliseconds)": "3.71"
+    },
+    {
+        "Time per cicle (microseconds)": 6.16,
+        "Code": "055.mul",
+        "Cicles": 536,
+        "Execution time (milliseconds)": "3.30"
+    },
+    {
+        "Time per cicle (microseconds)": 6.17,
+        "Code": "034.add",
+        "Cicles": 608,
+        "Execution time (milliseconds)": "3.75"
+    },
+    {
+        "Time per cicle (microseconds)": 6.18,
+        "Code": "056.mul",
+        "Cicles": 510,
+        "Execution time (milliseconds)": "3.16"
+    },
+    {
+        "Time per cicle (microseconds)": 6.23,
+        "Code": "033.add",
+        "Cicles": 218,
+        "Execution time (milliseconds)": "1.36"
+    },
+    {
+        "Time per cicle (microseconds)": 6.3,
+        "Code": "123.loop",
+        "Cicles": 1178,
+        "Execution time (milliseconds)": "7.42"
+    },
+    {
+        "Time per cicle (microseconds)": 6.31,
+        "Code": "043.sub",
+        "Cicles": 218,
+        "Execution time (milliseconds)": "1.38"
+    },
+    {
+        "Time per cicle (microseconds)": 6.34,
+        "Code": "042.sub",
+        "Cicles": 250,
+        "Execution time (milliseconds)": "1.59"
+    },
+    {
+        "Time per cicle (microseconds)": 6.34,
+        "Code": "132.call",
+        "Cicles": 344,
+        "Execution time (milliseconds)": "2.18"
+    },
+    {
+        "Time per cicle (microseconds)": 6.37,
+        "Code": "081.shift",
+        "Cicles": 152,
+        "Execution time (milliseconds)": "0.97"
+    },
+    {
+        "Time per cicle (microseconds)": 6.4,
+        "Code": "083.shift",
+        "Cicles": 156,
+        "Execution time (milliseconds)": "1.00"
+    },
+    {
+        "Time per cicle (microseconds)": 6.41,
+        "Code": "082.shift",
+        "Cicles": 156,
+        "Execution time (milliseconds)": "1.00"
+    },
+    {
+        "Time per cicle (microseconds)": 6.48,
+        "Code": "032.add",
+        "Cicles": 250,
+        "Execution time (milliseconds)": "1.62"
+    },
+    {
+        "Time per cicle (microseconds)": 6.48,
+        "Code": "057.mul",
+        "Cicles": 219,
+        "Execution time (milliseconds)": "1.42"
+    },
+    {
+        "Time per cicle (microseconds)": 6.6,
+        "Code": "084.shift",
+        "Cicles": 472,
+        "Execution time (milliseconds)": "3.11"
+    },
+    {
+        "Time per cicle (microseconds)": 6.6,
+        "Code": "117.if",
+        "Cicles": 324,
+        "Execution time (milliseconds)": "2.14"
+    },
+    {
+        "Time per cicle (microseconds)": 6.61,
+        "Code": "052.mul",
+        "Cicles": 103,
+        "Execution time (milliseconds)": "0.68"
+    },
+    {
+        "Time per cicle (microseconds)": 6.63,
+        "Code": "065.div",
+        "Cicles": 131,
+        "Execution time (milliseconds)": "0.87"
+    },
+    {
+        "Time per cicle (microseconds)": 6.64,
+        "Code": "062.div",
+        "Cicles": 124,
+        "Execution time (milliseconds)": "0.83"
+    },
+    {
+        "Time per cicle (microseconds)": 6.66,
+        "Code": "064.div",
+        "Cicles": 128,
+        "Execution time (milliseconds)": "0.85"
+    },
+    {
+        "Time per cicle (microseconds)": 6.67,
+        "Code": "124.loop",
+        "Cicles": 1689,
+        "Execution time (milliseconds)": "11.26"
+    },
+    {
+        "Time per cicle (microseconds)": 6.68,
+        "Code": "054.mul",
+        "Cicles": 106,
+        "Execution time (milliseconds)": "0.71"
+    },
+    {
+        "Time per cicle (microseconds)": 6.69,
+        "Code": "066.div",
+        "Cicles": 127,
+        "Execution time (milliseconds)": "0.85"
+    },
+    {
+        "Time per cicle (microseconds)": 6.69,
+        "Code": "118.if",
+        "Cicles": 324,
+        "Execution time (milliseconds)": "2.17"
+    },
+    {
+        "Time per cicle (microseconds)": 6.69,
+        "Code": "053.mul",
+        "Cicles": 106,
+        "Execution time (milliseconds)": "0.71"
+    },
+    {
+        "Time per cicle (microseconds)": 6.7,
+        "Code": "112.if",
+        "Cicles": 216,
+        "Execution time (milliseconds)": "1.45"
+    },
+    {
+        "Time per cicle (microseconds)": 6.75,
+        "Code": "116.if",
+        "Cicles": 216,
+        "Execution time (milliseconds)": "1.46"
+    },
+    {
+        "Time per cicle (microseconds)": 6.76,
+        "Code": "114.if",
+        "Cicles": 216,
+        "Execution time (milliseconds)": "1.46"
+    },
+    {
+        "Time per cicle (microseconds)": 6.81,
+        "Code": "023.cast",
+        "Cicles": 56,
+        "Execution time (milliseconds)": "0.38"
+    },
+    {
+        "Time per cicle (microseconds)": 6.84,
+        "Code": "115.if",
+        "Cicles": 216,
+        "Execution time (milliseconds)": "1.48"
+    },
+    {
+        "Time per cicle (microseconds)": 6.9,
+        "Code": "041.sub",
+        "Cicles": 225,
+        "Execution time (milliseconds)": "1.55"
+    },
+    {
+        "Time per cicle (microseconds)": 6.9,
+        "Code": "113.if",
+        "Cicles": 216,
+        "Execution time (milliseconds)": "1.49"
+    },
+    {
+        "Time per cicle (microseconds)": 6.92,
+        "Code": "119.if",
+        "Cicles": 176,
+        "Execution time (milliseconds)": "1.22"
+    },
+    {
+        "Time per cicle (microseconds)": 6.93,
+        "Code": "018.const",
+        "Cicles": 49,
+        "Execution time (milliseconds)": "0.34"
+    },
+    {
+        "Time per cicle (microseconds)": 7.07,
+        "Code": "111.if",
+        "Cicles": 216,
+        "Execution time (milliseconds)": "1.53"
+    },
+    {
+        "Time per cicle (microseconds)": 7.09,
+        "Code": "031.add",
+        "Cicles": 225,
+        "Execution time (milliseconds)": "1.60"
+    },
+    {
+        "Time per cicle (microseconds)": 7.16,
+        "Code": "025.cast",
+        "Cicles": 57,
+        "Execution time (milliseconds)": "0.41"
+    },
+    {
+        "Time per cicle (microseconds)": 7.24,
+        "Code": "058.mul",
+        "Cicles": 217,
+        "Execution time (milliseconds)": "1.57"
+    },
+    {
+        "Time per cicle (microseconds)": 7.26,
+        "Code": "026.cast",
+        "Cicles": 49,
+        "Execution time (milliseconds)": "0.36"
+    },
+    {
+        "Time per cicle (microseconds)": 7.28,
+        "Code": "017.const",
+        "Cicles": 49,
+        "Execution time (milliseconds)": "0.36"
+    },
+    {
+        "Time per cicle (microseconds)": 7.54,
+        "Code": "011.const",
+        "Cicles": 27,
+        "Execution time (milliseconds)": "0.20"
+    },
+    {
+        "Time per cicle (microseconds)": 7.67,
+        "Code": "021.cast",
+        "Cicles": 33,
+        "Execution time (milliseconds)": "0.25"
+    },
+    {
+        "Time per cicle (microseconds)": 7.68,
+        "Code": "074.bool",
+        "Cicles": 620,
+        "Execution time (milliseconds)": "4.76"
+    },
+    {
+        "Time per cicle (microseconds)": 7.72,
+        "Code": "024.cast",
+        "Cicles": 34,
+        "Execution time (milliseconds)": "0.26"
+    },
+    {
+        "Time per cicle (microseconds)": 7.77,
+        "Code": "086.shift",
+        "Cicles": 88,
+        "Execution time (milliseconds)": "0.68"
+    },
+    {
+        "Time per cicle (microseconds)": 7.83,
+        "Code": "076.bool",
+        "Cicles": 49,
+        "Execution time (milliseconds)": "0.38"
+    },
+    {
+        "Time per cicle (microseconds)": 7.83,
+        "Code": "012.const",
+        "Cicles": 27,
+        "Execution time (milliseconds)": "0.21"
+    },
+    {
+        "Time per cicle (microseconds)": 7.83,
+        "Code": "085.shift",
+        "Cicles": 204,
+        "Execution time (milliseconds)": "1.60"
+    },
+    {
+        "Time per cicle (microseconds)": 7.84,
+        "Code": "016.const",
+        "Cicles": 30,
+        "Execution time (milliseconds)": "0.24"
+    },
+    {
+        "Time per cicle (microseconds)": 7.84,
+        "Code": "077.bool",
+        "Cicles": 45,
+        "Execution time (milliseconds)": "0.35"
+    },
+    {
+        "Time per cicle (microseconds)": 7.85,
+        "Code": "061.div",
+        "Cicles": 129,
+        "Execution time (milliseconds)": "1.01"
+    },
+    {
+        "Time per cicle (microseconds)": 7.86,
+        "Code": "125.loop",
+        "Cicles": 45,
+        "Execution time (milliseconds)": "0.35"
+    },
+    {
+        "Time per cicle (microseconds)": 7.93,
+        "Code": "063.div",
+        "Cicles": 133,
+        "Execution time (milliseconds)": "1.06"
+    },
+    {
+        "Time per cicle (microseconds)": 7.96,
+        "Code": "015.const",
+        "Cicles": 30,
+        "Execution time (milliseconds)": "0.24"
+    },
+    {
+        "Time per cicle (microseconds)": 7.96,
+        "Code": "014.const",
+        "Cicles": 30,
+        "Execution time (milliseconds)": "0.24"
+    },
+    {
+        "Time per cicle (microseconds)": 8.05,
+        "Code": "075.bool",
+        "Cicles": 110,
+        "Execution time (milliseconds)": "0.89"
+    },
+    {
+        "Time per cicle (microseconds)": 8.1,
+        "Code": "027.cast",
+        "Cicles": 39,
+        "Execution time (milliseconds)": "0.32"
+    },
+    {
+        "Time per cicle (microseconds)": 8.25,
+        "Code": "073.bool",
+        "Cicles": 238,
+        "Execution time (milliseconds)": "1.96"
+    },
+    {
+        "Time per cicle (microseconds)": 8.27,
+        "Code": "072.bool",
+        "Cicles": 268,
+        "Execution time (milliseconds)": "2.22"
+    },
+    {
+        "Time per cicle (microseconds)": 8.3,
+        "Code": "022.cast",
+        "Cicles": 33,
+        "Execution time (milliseconds)": "0.28"
+    },
+    {
+        "Time per cicle (microseconds)": 8.94,
+        "Code": "078.bool",
+        "Cicles": 42,
+        "Execution time (milliseconds)": "0.38"
+    },
+    {
+        "Time per cicle (microseconds)": 8.96,
+        "Code": "071.bool",
+        "Cicles": 249,
+        "Execution time (milliseconds)": "2.23"
+    },
+    {
+        "Time per cicle (microseconds)": 10.23,
+        "Code": "000.main",
+        "Cicles": 12,
+        "Execution time (milliseconds)": "0.12"
+    },
+    {
+        "Time per cicle (microseconds)": 12.33,
+        "Code": "013.const",
+        "Cicles": 30,
+        "Execution time (milliseconds)": "0.37"
+    },
+    {
+        "Time per cicle (microseconds)": 18.99,
+        "Code": "051.mul",
+        "Cicles": 103,
+        "Execution time (milliseconds)": "1.96"
+    }
+]
