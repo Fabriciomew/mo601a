@@ -1,0 +1,115 @@
+
+054.mul.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	00200793          	li	a5,2
+ 1d8:	fef41723          	sh	a5,-18(s0)
+ 1dc:	00400793          	li	a5,4
+ 1e0:	fef41623          	sh	a5,-20(s0)
+ 1e4:	fee45703          	lhu	a4,-18(s0)
+ 1e8:	fec45783          	lhu	a5,-20(s0)
+ 1ec:	02f707b3          	mul	a5,a4,a5
+ 1f0:	fef42423          	sw	a5,-24(s0)
+ 1f4:	fe042423          	sw	zero,-24(s0)
+ 1f8:	fff00793          	li	a5,-1
+ 1fc:	fef41723          	sh	a5,-18(s0)
+ 200:	fff00793          	li	a5,-1
+ 204:	fef41623          	sh	a5,-20(s0)
+ 208:	fee45703          	lhu	a4,-18(s0)
+ 20c:	fec45783          	lhu	a5,-20(s0)
+ 210:	02f707b3          	mul	a5,a4,a5
+ 214:	fef42423          	sw	a5,-24(s0)
+ 218:	fe042423          	sw	zero,-24(s0)
+ 21c:	fff00793          	li	a5,-1
+ 220:	fef41723          	sh	a5,-18(s0)
+ 224:	00100793          	li	a5,1
+ 228:	fef41623          	sh	a5,-20(s0)
+ 22c:	fee45703          	lhu	a4,-18(s0)
+ 230:	fec45783          	lhu	a5,-20(s0)
+ 234:	02f707b3          	mul	a5,a4,a5
+ 238:	fef42423          	sw	a5,-24(s0)
+ 23c:	fe042423          	sw	zero,-24(s0)
+ 240:	fff00793          	li	a5,-1
+ 244:	fef41723          	sh	a5,-18(s0)
+ 248:	00a00793          	li	a5,10
+ 24c:	fef41623          	sh	a5,-20(s0)
+ 250:	fee45703          	lhu	a4,-18(s0)
+ 254:	fec45783          	lhu	a5,-20(s0)
+ 258:	02f707b3          	mul	a5,a4,a5
+ 25c:	fef42423          	sw	a5,-24(s0)
+ 260:	fe042423          	sw	zero,-24(s0)
+ 264:	ffe00793          	li	a5,-2
+ 268:	fef41723          	sh	a5,-18(s0)
+ 26c:	ffc00793          	li	a5,-4
+ 270:	fef41623          	sh	a5,-20(s0)
+ 274:	fee45703          	lhu	a4,-18(s0)
+ 278:	fec45783          	lhu	a5,-20(s0)
+ 27c:	02f707b3          	mul	a5,a4,a5
+ 280:	fef42423          	sw	a5,-24(s0)
+ 284:	fe042423          	sw	zero,-24(s0)
+ 288:	00a00793          	li	a5,10
+ 28c:	fef41723          	sh	a5,-18(s0)
+ 290:	00b00793          	li	a5,11
+ 294:	fef41623          	sh	a5,-20(s0)
+ 298:	fee45703          	lhu	a4,-18(s0)
+ 29c:	fec45783          	lhu	a5,-20(s0)
+ 2a0:	02f707b3          	mul	a5,a4,a5
+ 2a4:	fef42423          	sw	a5,-24(s0)
+ 2a8:	fe042423          	sw	zero,-24(s0)
+ 2ac:	ff600793          	li	a5,-10
+ 2b0:	fef41723          	sh	a5,-18(s0)
+ 2b4:	00b00793          	li	a5,11
+ 2b8:	fef41623          	sh	a5,-20(s0)
+ 2bc:	fee45703          	lhu	a4,-18(s0)
+ 2c0:	fec45783          	lhu	a5,-20(s0)
+ 2c4:	02f707b3          	mul	a5,a4,a5
+ 2c8:	fef42423          	sw	a5,-24(s0)
+ 2cc:	fe042423          	sw	zero,-24(s0)
+ 2d0:	fffff7b7          	lui	a5,0xfffff
+ 2d4:	fef41723          	sh	a5,-18(s0)
+ 2d8:	fffff7b7          	lui	a5,0xfffff
+ 2dc:	00178793          	addi	a5,a5,1 # fffff001 <memory_size+0xdffff001>
+ 2e0:	fef41623          	sh	a5,-20(s0)
+ 2e4:	fee45703          	lhu	a4,-18(s0)
+ 2e8:	fec45783          	lhu	a5,-20(s0)
+ 2ec:	02f707b3          	mul	a5,a4,a5
+ 2f0:	fef42423          	sw	a5,-24(s0)
+ 2f4:	fe042423          	sw	zero,-24(s0)
+ 2f8:	000057b7          	lui	a5,0x5
+ 2fc:	55578793          	addi	a5,a5,1365 # 5555 <__BSS_END__+0x2455>
+ 300:	fef41723          	sh	a5,-18(s0)
+ 304:	000037b7          	lui	a5,0x3
+ 308:	33378793          	addi	a5,a5,819 # 3333 <__BSS_END__+0x233>
+ 30c:	fef41623          	sh	a5,-20(s0)
+ 310:	fee45703          	lhu	a4,-18(s0)
+ 314:	fec45783          	lhu	a5,-20(s0)
+ 318:	02f707b3          	mul	a5,a4,a5
+ 31c:	fef42423          	sw	a5,-24(s0)
+ 320:	fe042423          	sw	zero,-24(s0)
+ 324:	000057b7          	lui	a5,0x5
+ 328:	35378793          	addi	a5,a5,851 # 5353 <__BSS_END__+0x2253>
+ 32c:	fef41723          	sh	a5,-18(s0)
+ 330:	ffff87b7          	lui	a5,0xffff8
+ 334:	fef41623          	sh	a5,-20(s0)
+ 338:	fee45703          	lhu	a4,-18(s0)
+ 33c:	fec45783          	lhu	a5,-20(s0)
+ 340:	02f707b3          	mul	a5,a4,a5
+ 344:	fef42423          	sw	a5,-24(s0)
+ 348:	fe042423          	sw	zero,-24(s0)
+ 34c:	00000793          	li	a5,0
+ 350:	00078513          	mv	a0,a5
+ 354:	01c12403          	lw	s0,28(sp)
+ 358:	02010113          	addi	sp,sp,32
+ 35c:	00008067          	ret

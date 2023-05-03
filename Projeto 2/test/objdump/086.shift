@@ -1,0 +1,117 @@
+
+086.shift.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	f3800313          	li	t1,-200
+ 1d8:	fff00393          	li	t2,-1
+ 1dc:	fe642423          	sw	t1,-24(s0)
+ 1e0:	fe742623          	sw	t2,-20(s0)
+ 1e4:	00000313          	li	t1,0
+ 1e8:	00000393          	li	t2,0
+ 1ec:	fe642023          	sw	t1,-32(s0)
+ 1f0:	fe742223          	sw	t2,-28(s0)
+ 1f4:	fe042303          	lw	t1,-32(s0)
+ 1f8:	fe030e13          	addi	t3,t1,-32
+ 1fc:	000e4c63          	bltz	t3,214 <main+0x4c>
+ 200:	fec42303          	lw	t1,-20(s0)
+ 204:	41c35833          	sra	a6,t1,t3
+ 208:	fec42303          	lw	t1,-20(s0)
+ 20c:	41f35893          	srai	a7,t1,0x1f
+ 210:	02c0006f          	j	23c <main+0x74>
+ 214:	fec42e03          	lw	t3,-20(s0)
+ 218:	001e1e93          	slli	t4,t3,0x1
+ 21c:	01f00e13          	li	t3,31
+ 220:	406e0e33          	sub	t3,t3,t1
+ 224:	01ce9e33          	sll	t3,t4,t3
+ 228:	fe842e83          	lw	t4,-24(s0)
+ 22c:	006ed833          	srl	a6,t4,t1
+ 230:	010e6833          	or	a6,t3,a6
+ 234:	fec42e03          	lw	t3,-20(s0)
+ 238:	406e58b3          	sra	a7,t3,t1
+ 23c:	ff042423          	sw	a6,-24(s0)
+ 240:	ff142623          	sw	a7,-20(s0)
+ 244:	00100813          	li	a6,1
+ 248:	00000893          	li	a7,0
+ 24c:	ff042023          	sw	a6,-32(s0)
+ 250:	ff142223          	sw	a7,-28(s0)
+ 254:	fe042803          	lw	a6,-32(s0)
+ 258:	fe080893          	addi	a7,a6,-32
+ 25c:	0008cc63          	bltz	a7,274 <main+0xac>
+ 260:	fec42803          	lw	a6,-20(s0)
+ 264:	41185533          	sra	a0,a6,a7
+ 268:	fec42803          	lw	a6,-20(s0)
+ 26c:	41f85593          	srai	a1,a6,0x1f
+ 270:	02c0006f          	j	29c <main+0xd4>
+ 274:	fec42883          	lw	a7,-20(s0)
+ 278:	00189313          	slli	t1,a7,0x1
+ 27c:	01f00893          	li	a7,31
+ 280:	410888b3          	sub	a7,a7,a6
+ 284:	011318b3          	sll	a7,t1,a7
+ 288:	fe842303          	lw	t1,-24(s0)
+ 28c:	01035533          	srl	a0,t1,a6
+ 290:	00a8e533          	or	a0,a7,a0
+ 294:	fec42883          	lw	a7,-20(s0)
+ 298:	4108d5b3          	sra	a1,a7,a6
+ 29c:	fea42423          	sw	a0,-24(s0)
+ 2a0:	feb42623          	sw	a1,-20(s0)
+ 2a4:	00200513          	li	a0,2
+ 2a8:	00000593          	li	a1,0
+ 2ac:	fea42023          	sw	a0,-32(s0)
+ 2b0:	feb42223          	sw	a1,-28(s0)
+ 2b4:	fe042583          	lw	a1,-32(s0)
+ 2b8:	fe058513          	addi	a0,a1,-32
+ 2bc:	00054c63          	bltz	a0,2d4 <main+0x10c>
+ 2c0:	fec42583          	lw	a1,-20(s0)
+ 2c4:	40a5d633          	sra	a2,a1,a0
+ 2c8:	fec42583          	lw	a1,-20(s0)
+ 2cc:	41f5d693          	srai	a3,a1,0x1f
+ 2d0:	02c0006f          	j	2fc <main+0x134>
+ 2d4:	fec42503          	lw	a0,-20(s0)
+ 2d8:	00151813          	slli	a6,a0,0x1
+ 2dc:	01f00513          	li	a0,31
+ 2e0:	40b50533          	sub	a0,a0,a1
+ 2e4:	00a81533          	sll	a0,a6,a0
+ 2e8:	fe842803          	lw	a6,-24(s0)
+ 2ec:	00b85633          	srl	a2,a6,a1
+ 2f0:	00c56633          	or	a2,a0,a2
+ 2f4:	fec42503          	lw	a0,-20(s0)
+ 2f8:	40b556b3          	sra	a3,a0,a1
+ 2fc:	fec42423          	sw	a2,-24(s0)
+ 300:	fed42623          	sw	a3,-20(s0)
+ 304:	fe042683          	lw	a3,-32(s0)
+ 308:	fe068613          	addi	a2,a3,-32
+ 30c:	00064c63          	bltz	a2,324 <main+0x15c>
+ 310:	fec42683          	lw	a3,-20(s0)
+ 314:	40c6d733          	sra	a4,a3,a2
+ 318:	fec42683          	lw	a3,-20(s0)
+ 31c:	41f6d793          	srai	a5,a3,0x1f
+ 320:	02c0006f          	j	34c <main+0x184>
+ 324:	fec42603          	lw	a2,-20(s0)
+ 328:	00161593          	slli	a1,a2,0x1
+ 32c:	01f00613          	li	a2,31
+ 330:	40d60633          	sub	a2,a2,a3
+ 334:	00c59633          	sll	a2,a1,a2
+ 338:	fe842583          	lw	a1,-24(s0)
+ 33c:	00d5d733          	srl	a4,a1,a3
+ 340:	00e66733          	or	a4,a2,a4
+ 344:	fec42603          	lw	a2,-20(s0)
+ 348:	40d657b3          	sra	a5,a2,a3
+ 34c:	fee42423          	sw	a4,-24(s0)
+ 350:	fef42623          	sw	a5,-20(s0)
+ 354:	00000793          	li	a5,0
+ 358:	00078513          	mv	a0,a5
+ 35c:	01c12403          	lw	s0,28(sp)
+ 360:	02010113          	addi	sp,sp,32
+ 364:	00008067          	ret

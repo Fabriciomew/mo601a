@@ -1,0 +1,39 @@
+
+014.const.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	000057b7          	lui	a5,0x5
+ 1d8:	55578793          	addi	a5,a5,1365 # 5555 <__BSS_END__+0x2455>
+ 1dc:	fef41723          	sh	a5,-18(s0)
+ 1e0:	ffffb7b7          	lui	a5,0xffffb
+ 1e4:	aaa78793          	addi	a5,a5,-1366 # ffffaaaa <memory_size+0xdfffaaaa>
+ 1e8:	fef41723          	sh	a5,-18(s0)
+ 1ec:	fe041723          	sh	zero,-18(s0)
+ 1f0:	fff00793          	li	a5,-1
+ 1f4:	fef41723          	sh	a5,-18(s0)
+ 1f8:	ffff87b7          	lui	a5,0xffff8
+ 1fc:	fef41723          	sh	a5,-18(s0)
+ 200:	00100793          	li	a5,1
+ 204:	fef41723          	sh	a5,-18(s0)
+ 208:	ffff87b7          	lui	a5,0xffff8
+ 20c:	fff7c793          	not	a5,a5
+ 210:	fef41723          	sh	a5,-18(s0)
+ 214:	ffe00793          	li	a5,-2
+ 218:	fef41723          	sh	a5,-18(s0)
+ 21c:	00000793          	li	a5,0
+ 220:	00078513          	mv	a0,a5
+ 224:	01c12403          	lw	s0,28(sp)
+ 228:	02010113          	addi	sp,sp,32
+ 22c:	00008067          	ret

@@ -1,0 +1,54 @@
+
+077.bool.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	fe000793          	li	a5,-32
+ 1d8:	fef42623          	sw	a5,-20(s0)
+ 1dc:	fce00793          	li	a5,-50
+ 1e0:	fef42423          	sw	a5,-24(s0)
+ 1e4:	fe042223          	sw	zero,-28(s0)
+ 1e8:	fec42783          	lw	a5,-20(s0)
+ 1ec:	fce7a793          	slti	a5,a5,-50
+ 1f0:	0ff7f793          	andi	a5,a5,255
+ 1f4:	fef42223          	sw	a5,-28(s0)
+ 1f8:	fe042223          	sw	zero,-28(s0)
+ 1fc:	ffb00793          	li	a5,-5
+ 200:	fef42423          	sw	a5,-24(s0)
+ 204:	fec42783          	lw	a5,-20(s0)
+ 208:	ffb7a793          	slti	a5,a5,-5
+ 20c:	0ff7f793          	andi	a5,a5,255
+ 210:	fef42223          	sw	a5,-28(s0)
+ 214:	fe042223          	sw	zero,-28(s0)
+ 218:	0c800793          	li	a5,200
+ 21c:	fef42623          	sw	a5,-20(s0)
+ 220:	0fa00793          	li	a5,250
+ 224:	fef42423          	sw	a5,-24(s0)
+ 228:	fec42783          	lw	a5,-20(s0)
+ 22c:	0fa7a793          	slti	a5,a5,250
+ 230:	0ff7f793          	andi	a5,a5,255
+ 234:	fef42223          	sw	a5,-28(s0)
+ 238:	fe042223          	sw	zero,-28(s0)
+ 23c:	0d200793          	li	a5,210
+ 240:	fef42423          	sw	a5,-24(s0)
+ 244:	fec42783          	lw	a5,-20(s0)
+ 248:	0d27a793          	slti	a5,a5,210
+ 24c:	0ff7f793          	andi	a5,a5,255
+ 250:	fef42223          	sw	a5,-28(s0)
+ 254:	fe042223          	sw	zero,-28(s0)
+ 258:	00000793          	li	a5,0
+ 25c:	00078513          	mv	a0,a5
+ 260:	01c12403          	lw	s0,28(sp)
+ 264:	02010113          	addi	sp,sp,32
+ 268:	00008067          	ret

@@ -1,0 +1,43 @@
+
+024.cast.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	fe042623          	sw	zero,-20(s0)
+ 1d8:	00100793          	li	a5,1
+ 1dc:	fef41523          	sh	a5,-22(s0)
+ 1e0:	fea41783          	lh	a5,-22(s0)
+ 1e4:	fef42623          	sw	a5,-20(s0)
+ 1e8:	fe042623          	sw	zero,-20(s0)
+ 1ec:	fff00793          	li	a5,-1
+ 1f0:	fef41523          	sh	a5,-22(s0)
+ 1f4:	fea41783          	lh	a5,-22(s0)
+ 1f8:	fef42623          	sw	a5,-20(s0)
+ 1fc:	fe042623          	sw	zero,-20(s0)
+ 200:	ffff87b7          	lui	a5,0xffff8
+ 204:	fef41523          	sh	a5,-22(s0)
+ 208:	fea41783          	lh	a5,-22(s0)
+ 20c:	fef42623          	sw	a5,-20(s0)
+ 210:	fe042623          	sw	zero,-20(s0)
+ 214:	ffff87b7          	lui	a5,0xffff8
+ 218:	fff7c793          	not	a5,a5
+ 21c:	fef41523          	sh	a5,-22(s0)
+ 220:	fea41783          	lh	a5,-22(s0)
+ 224:	fef42623          	sw	a5,-20(s0)
+ 228:	fe042623          	sw	zero,-20(s0)
+ 22c:	00000793          	li	a5,0
+ 230:	00078513          	mv	a0,a5
+ 234:	01c12403          	lw	s0,28(sp)
+ 238:	02010113          	addi	sp,sp,32
+ 23c:	00008067          	ret

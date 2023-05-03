@@ -1,0 +1,51 @@
+
+078.bool.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	fe042623          	sw	zero,-20(s0)
+ 1d8:	fec42783          	lw	a5,-20(s0)
+ 1dc:	01f7e793          	ori	a5,a5,31
+ 1e0:	fef42423          	sw	a5,-24(s0)
+ 1e4:	fe042423          	sw	zero,-24(s0)
+ 1e8:	fec42783          	lw	a5,-20(s0)
+ 1ec:	00f7e793          	ori	a5,a5,15
+ 1f0:	fef42423          	sw	a5,-24(s0)
+ 1f4:	fe042423          	sw	zero,-24(s0)
+ 1f8:	fec42783          	lw	a5,-20(s0)
+ 1fc:	0117e793          	ori	a5,a5,17
+ 200:	fef42423          	sw	a5,-24(s0)
+ 204:	fe042423          	sw	zero,-24(s0)
+ 208:	fec42783          	lw	a5,-20(s0)
+ 20c:	1017e793          	ori	a5,a5,257
+ 210:	fff7c793          	not	a5,a5
+ 214:	fef42423          	sw	a5,-24(s0)
+ 218:	fe042423          	sw	zero,-24(s0)
+ 21c:	fec42783          	lw	a5,-20(s0)
+ 220:	1117e793          	ori	a5,a5,273
+ 224:	fff7c793          	not	a5,a5
+ 228:	fef42423          	sw	a5,-24(s0)
+ 22c:	fe042423          	sw	zero,-24(s0)
+ 230:	fec42703          	lw	a4,-20(s0)
+ 234:	000017b7          	lui	a5,0x1
+ 238:	fff78793          	addi	a5,a5,-1 # fff <main+0xe37>
+ 23c:	00f767b3          	or	a5,a4,a5
+ 240:	fff7c793          	not	a5,a5
+ 244:	fef42423          	sw	a5,-24(s0)
+ 248:	fe042423          	sw	zero,-24(s0)
+ 24c:	00000793          	li	a5,0
+ 250:	00078513          	mv	a0,a5
+ 254:	01c12403          	lw	s0,28(sp)
+ 258:	02010113          	addi	sp,sp,32
+ 25c:	00008067          	ret

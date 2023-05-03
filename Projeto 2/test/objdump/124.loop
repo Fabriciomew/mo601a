@@ -1,0 +1,125 @@
+
+124.loop.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fc010113          	addi	sp,sp,-64 # 4fffc0 <__BSS_END__+0x4fcec0>
+ 1cc:	02812e23          	sw	s0,60(sp)
+ 1d0:	04010413          	addi	s0,sp,64
+ 1d4:	02000313          	li	t1,32
+ 1d8:	fe6407a3          	sb	t1,-17(s0)
+ 1dc:	82348337          	lui	t1,0x82348
+ 1e0:	24330313          	addi	t1,t1,579 # 82348243 <memory_size+0x62348243>
+ 1e4:	fc642e23          	sw	t1,-36(s0)
+ 1e8:	41379337          	lui	t1,0x41379
+ 1ec:	97230313          	addi	t1,t1,-1678 # 41378972 <memory_size+0x21378972>
+ 1f0:	fe642223          	sw	t1,-28(s0)
+ 1f4:	fe042023          	sw	zero,-32(s0)
+ 1f8:	fe042423          	sw	zero,-24(s0)
+ 1fc:	1280006f          	j	324 <main+0x15c>
+ 200:	fe442303          	lw	t1,-28(s0)
+ 204:	00131313          	slli	t1,t1,0x1
+ 208:	00237e13          	andi	t3,t1,2
+ 20c:	fe042303          	lw	t1,-32(s0)
+ 210:	00137313          	andi	t1,t1,1
+ 214:	006e6333          	or	t1,t3,t1
+ 218:	fc642623          	sw	t1,-52(s0)
+ 21c:	fcc42e03          	lw	t3,-52(s0)
+ 220:	00300313          	li	t1,3
+ 224:	066e0463          	beq	t3,t1,28c <main+0xc4>
+ 228:	fcc42e03          	lw	t3,-52(s0)
+ 22c:	00300313          	li	t1,3
+ 230:	07c36063          	bltu	t1,t3,290 <main+0xc8>
+ 234:	fcc42e03          	lw	t3,-52(s0)
+ 238:	00200313          	li	t1,2
+ 23c:	026e0463          	beq	t3,t1,264 <main+0x9c>
+ 240:	fcc42e03          	lw	t3,-52(s0)
+ 244:	00200313          	li	t1,2
+ 248:	05c36463          	bltu	t1,t3,290 <main+0xc8>
+ 24c:	fcc42303          	lw	t1,-52(s0)
+ 250:	02030e63          	beqz	t1,28c <main+0xc4>
+ 254:	fcc42e03          	lw	t3,-52(s0)
+ 258:	00100313          	li	t1,1
+ 25c:	006e0e63          	beq	t3,t1,278 <main+0xb0>
+ 260:	0300006f          	j	290 <main+0xc8>
+ 264:	fe842e03          	lw	t3,-24(s0)
+ 268:	fdc42303          	lw	t1,-36(s0)
+ 26c:	406e0333          	sub	t1,t3,t1
+ 270:	fe642423          	sw	t1,-24(s0)
+ 274:	01c0006f          	j	290 <main+0xc8>
+ 278:	fe842e03          	lw	t3,-24(s0)
+ 27c:	fdc42303          	lw	t1,-36(s0)
+ 280:	006e0333          	add	t1,t3,t1
+ 284:	fe642423          	sw	t1,-24(s0)
+ 288:	0080006f          	j	290 <main+0xc8>
+ 28c:	00000013          	nop
+ 290:	fe442303          	lw	t1,-28(s0)
+ 294:	00137313          	andi	t1,t1,1
+ 298:	00030863          	beqz	t1,2a8 <main+0xe0>
+ 29c:	00100313          	li	t1,1
+ 2a0:	fe642023          	sw	t1,-32(s0)
+ 2a4:	0080006f          	j	2ac <main+0xe4>
+ 2a8:	fe042023          	sw	zero,-32(s0)
+ 2ac:	fe442303          	lw	t1,-28(s0)
+ 2b0:	00135313          	srli	t1,t1,0x1
+ 2b4:	fe642223          	sw	t1,-28(s0)
+ 2b8:	fe842303          	lw	t1,-24(s0)
+ 2bc:	00137313          	andi	t1,t1,1
+ 2c0:	00030c63          	beqz	t1,2d8 <main+0x110>
+ 2c4:	fe442e03          	lw	t3,-28(s0)
+ 2c8:	80000337          	lui	t1,0x80000
+ 2cc:	006e6333          	or	t1,t3,t1
+ 2d0:	fe642223          	sw	t1,-28(s0)
+ 2d4:	0180006f          	j	2ec <main+0x124>
+ 2d8:	fe442e03          	lw	t3,-28(s0)
+ 2dc:	80000337          	lui	t1,0x80000
+ 2e0:	fff34313          	not	t1,t1
+ 2e4:	006e7333          	and	t1,t3,t1
+ 2e8:	fe642223          	sw	t1,-28(s0)
+ 2ec:	fe842303          	lw	t1,-24(s0)
+ 2f0:	00135313          	srli	t1,t1,0x1
+ 2f4:	fe642423          	sw	t1,-24(s0)
+ 2f8:	fe842e03          	lw	t3,-24(s0)
+ 2fc:	40000337          	lui	t1,0x40000
+ 300:	006e7333          	and	t1,t3,t1
+ 304:	00030a63          	beqz	t1,318 <main+0x150>
+ 308:	fe842e03          	lw	t3,-24(s0)
+ 30c:	80000337          	lui	t1,0x80000
+ 310:	006e6333          	or	t1,t3,t1
+ 314:	fe642423          	sw	t1,-24(s0)
+ 318:	fef44303          	lbu	t1,-17(s0)
+ 31c:	fff30313          	addi	t1,t1,-1 # 7fffffff <memory_size+0x5fffffff>
+ 320:	fe6407a3          	sb	t1,-17(s0)
+ 324:	fef44303          	lbu	t1,-17(s0)
+ 328:	ec031ce3          	bnez	t1,200 <main+0x38>
+ 32c:	00000e13          	li	t3,0
+ 330:	00000e93          	li	t4,0
+ 334:	fdc42823          	sw	t3,-48(s0)
+ 338:	fdd42a23          	sw	t4,-44(s0)
+ 33c:	fe842303          	lw	t1,-24(s0)
+ 340:	00030813          	mv	a6,t1
+ 344:	00000893          	li	a7,0
+ 348:	00081793          	slli	a5,a6,0x0
+ 34c:	00000713          	li	a4,0
+ 350:	fe442803          	lw	a6,-28(s0)
+ 354:	00080613          	mv	a2,a6
+ 358:	00000693          	li	a3,0
+ 35c:	00c76533          	or	a0,a4,a2
+ 360:	00d7e5b3          	or	a1,a5,a3
+ 364:	fca42823          	sw	a0,-48(s0)
+ 368:	fcb42a23          	sw	a1,-44(s0)
+ 36c:	fdc42823          	sw	t3,-48(s0)
+ 370:	fdd42a23          	sw	t4,-44(s0)
+ 374:	00000793          	li	a5,0
+ 378:	00078513          	mv	a0,a5
+ 37c:	03c12403          	lw	s0,60(sp)
+ 380:	04010113          	addi	sp,sp,64
+ 384:	00008067          	ret

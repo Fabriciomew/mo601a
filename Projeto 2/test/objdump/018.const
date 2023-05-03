@@ -1,0 +1,58 @@
+
+018.const.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	00000797          	auipc	a5,0x0
+ 1d8:	0ac78793          	addi	a5,a5,172 # 280 <main+0xb8>
+ 1dc:	0007a703          	lw	a4,0(a5)
+ 1e0:	0047a783          	lw	a5,4(a5)
+ 1e4:	fee42423          	sw	a4,-24(s0)
+ 1e8:	fef42623          	sw	a5,-20(s0)
+ 1ec:	00000797          	auipc	a5,0x0
+ 1f0:	09c78793          	addi	a5,a5,156 # 288 <main+0xc0>
+ 1f4:	0007a703          	lw	a4,0(a5)
+ 1f8:	0047a783          	lw	a5,4(a5)
+ 1fc:	fee42423          	sw	a4,-24(s0)
+ 200:	fef42623          	sw	a5,-20(s0)
+ 204:	00000793          	li	a5,0
+ 208:	00000813          	li	a6,0
+ 20c:	fef42423          	sw	a5,-24(s0)
+ 210:	ff042623          	sw	a6,-20(s0)
+ 214:	fff00713          	li	a4,-1
+ 218:	fff00793          	li	a5,-1
+ 21c:	fee42423          	sw	a4,-24(s0)
+ 220:	fef42623          	sw	a5,-20(s0)
+ 224:	00000713          	li	a4,0
+ 228:	800007b7          	lui	a5,0x80000
+ 22c:	fee42423          	sw	a4,-24(s0)
+ 230:	fef42623          	sw	a5,-20(s0)
+ 234:	00100713          	li	a4,1
+ 238:	00000793          	li	a5,0
+ 23c:	fee42423          	sw	a4,-24(s0)
+ 240:	fef42623          	sw	a5,-20(s0)
+ 244:	fff00713          	li	a4,-1
+ 248:	800007b7          	lui	a5,0x80000
+ 24c:	fff7c793          	not	a5,a5
+ 250:	fee42423          	sw	a4,-24(s0)
+ 254:	fef42623          	sw	a5,-20(s0)
+ 258:	ffe00713          	li	a4,-2
+ 25c:	fff00793          	li	a5,-1
+ 260:	fee42423          	sw	a4,-24(s0)
+ 264:	fef42623          	sw	a5,-20(s0)
+ 268:	00000793          	li	a5,0
+ 26c:	00078513          	mv	a0,a5
+ 270:	01c12403          	lw	s0,28(sp)
+ 274:	02010113          	addi	sp,sp,32
+ 278:	00008067          	ret

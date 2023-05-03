@@ -1,0 +1,21 @@
+
+000.main.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	ff010113          	addi	sp,sp,-16 # 4ffff0 <__BSS_END__+0x4fcef0>
+ 1cc:	00812623          	sw	s0,12(sp)
+ 1d0:	01010413          	addi	s0,sp,16
+ 1d4:	00000793          	li	a5,0
+ 1d8:	00078513          	mv	a0,a5
+ 1dc:	00c12403          	lw	s0,12(sp)
+ 1e0:	01010113          	addi	sp,sp,16
+ 1e4:	00008067          	ret

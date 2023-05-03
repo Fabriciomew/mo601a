@@ -1,0 +1,66 @@
+
+025.cast.riscv: formato do arquivo elf32-littleriscv
+
+
+Desmontagem da seção .text:
+
+000001b8 <_start>:
+ 1b8:	00500137          	lui	sp,0x500
+ 1bc:	00c000ef          	jal	ra,1c8 <main>
+ 1c0:	200002b7          	lui	t0,0x20000
+ 1c4:	00100073          	ebreak
+
+000001c8 <main>:
+ 1c8:	fe010113          	addi	sp,sp,-32 # 4fffe0 <__BSS_END__+0x4fcee0>
+ 1cc:	00812e23          	sw	s0,28(sp)
+ 1d0:	02010413          	addi	s0,sp,32
+ 1d4:	00000693          	li	a3,0
+ 1d8:	00000713          	li	a4,0
+ 1dc:	fed42423          	sw	a3,-24(s0)
+ 1e0:	fee42623          	sw	a4,-20(s0)
+ 1e4:	00100793          	li	a5,1
+ 1e8:	fef41323          	sh	a5,-26(s0)
+ 1ec:	fe645783          	lhu	a5,-26(s0)
+ 1f0:	01079793          	slli	a5,a5,0x10
+ 1f4:	4107d793          	srai	a5,a5,0x10
+ 1f8:	fef42423          	sw	a5,-24(s0)
+ 1fc:	41f7d793          	srai	a5,a5,0x1f
+ 200:	fef42623          	sw	a5,-20(s0)
+ 204:	fed42423          	sw	a3,-24(s0)
+ 208:	fee42623          	sw	a4,-20(s0)
+ 20c:	fff00793          	li	a5,-1
+ 210:	fef41323          	sh	a5,-26(s0)
+ 214:	fe645783          	lhu	a5,-26(s0)
+ 218:	01079793          	slli	a5,a5,0x10
+ 21c:	4107d793          	srai	a5,a5,0x10
+ 220:	fef42423          	sw	a5,-24(s0)
+ 224:	41f7d793          	srai	a5,a5,0x1f
+ 228:	fef42623          	sw	a5,-20(s0)
+ 22c:	fed42423          	sw	a3,-24(s0)
+ 230:	fee42623          	sw	a4,-20(s0)
+ 234:	ffff87b7          	lui	a5,0xffff8
+ 238:	fef41323          	sh	a5,-26(s0)
+ 23c:	fe645783          	lhu	a5,-26(s0)
+ 240:	01079793          	slli	a5,a5,0x10
+ 244:	4107d793          	srai	a5,a5,0x10
+ 248:	fef42423          	sw	a5,-24(s0)
+ 24c:	41f7d793          	srai	a5,a5,0x1f
+ 250:	fef42623          	sw	a5,-20(s0)
+ 254:	fed42423          	sw	a3,-24(s0)
+ 258:	fee42623          	sw	a4,-20(s0)
+ 25c:	ffff87b7          	lui	a5,0xffff8
+ 260:	fff7c793          	not	a5,a5
+ 264:	fef41323          	sh	a5,-26(s0)
+ 268:	fe645783          	lhu	a5,-26(s0)
+ 26c:	01079793          	slli	a5,a5,0x10
+ 270:	4107d793          	srai	a5,a5,0x10
+ 274:	fef42423          	sw	a5,-24(s0)
+ 278:	41f7d793          	srai	a5,a5,0x1f
+ 27c:	fef42623          	sw	a5,-20(s0)
+ 280:	fed42423          	sw	a3,-24(s0)
+ 284:	fee42623          	sw	a4,-20(s0)
+ 288:	00000793          	li	a5,0
+ 28c:	00078513          	mv	a0,a5
+ 290:	01c12403          	lw	s0,28(sp)
+ 294:	02010113          	addi	sp,sp,32
+ 298:	00008067          	ret
