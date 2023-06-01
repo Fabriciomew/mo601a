@@ -1,0 +1,351 @@
+valid,1
+
+"SPEC CPU2017 Integer Speed Result"
+
+"Full Results Table"
+
+Benchmark,"Base # Threads","Base Run Time","Base Ratio","Base Selected","Base Status","Peak # Threads","Peak Run Time","Peak Ratio","Peak Selected","Peak Status",Description
+600.perlbench_s,16,356.5259727,4.9785994,0,S,,,,,,"refspeed(ref) iteration #1"
+600.perlbench_s,16,348.8751408,5.0877801,1,S,,,,,,"refspeed(ref) iteration #2"
+600.perlbench_s,16,345.6083293,5.1358716,0,S,,,,,,"refspeed(ref) iteration #3"
+602.gcc_s,16,515.569841,7.7234929,0,S,,,,,,"refspeed(ref) iteration #1"
+602.gcc_s,16,494.5662528,8.0514996,1,S,,,,,,"refspeed(ref) iteration #2"
+602.gcc_s,16,491.5100219,8.1015642,0,S,,,,,,"refspeed(ref) iteration #3"
+605.mcf_s,16,577.583514,8.1737098,0,S,,,,,,"refspeed(ref) iteration #1"
+605.mcf_s,16,576.3182718,8.1916542,0,S,,,,,,"refspeed(ref) iteration #2"
+605.mcf_s,16,576.5688866,8.1880936,1,S,,,,,,"refspeed(ref) iteration #3"
+620.omnetpp_s,16,474.5052246,3.4372646,0,S,,,,,,"refspeed(ref) iteration #1"
+620.omnetpp_s,16,480.9020949,3.3915427,0,S,,,,,,"refspeed(ref) iteration #2"
+620.omnetpp_s,16,475.7674872,3.4281451,1,S,,,,,,"refspeed(ref) iteration #3"
+623.xalancbmk_s,16,239.6952547,5.9116731,1,S,,,,,,"refspeed(ref) iteration #1"
+623.xalancbmk_s,16,237.5553184,5.9649264,0,S,,,,,,"refspeed(ref) iteration #2"
+623.xalancbmk_s,16,240.3134152,5.8964665,0,S,,,,,,"refspeed(ref) iteration #3"
+625.x264_s,16,220.7643157,7.9904218,0,S,,,,,,"refspeed(ref) iteration #1"
+625.x264_s,16,214.6252308,8.2189778,0,S,,,,,,"refspeed(ref) iteration #2"
+625.x264_s,16,215.1066939,8.2005816,1,S,,,,,,"refspeed(ref) iteration #3"
+631.deepsjeng_s,16,348.9521497,4.1065802,0,S,,,,,,"refspeed(ref) iteration #1"
+631.deepsjeng_s,16,348.8521687,4.1077572,1,S,,,,,,"refspeed(ref) iteration #2"
+631.deepsjeng_s,16,347.5381163,4.1232887,0,S,,,,,,"refspeed(ref) iteration #3"
+641.leela_s,16,483.4134832,3.52907,0,S,,,,,,"refspeed(ref) iteration #1"
+641.leela_s,16,482.4291662,3.5362704,0,S,,,,,,"refspeed(ref) iteration #2"
+641.leela_s,16,483.0252586,3.5319064,1,S,,,,,,"refspeed(ref) iteration #3"
+648.exchange2_s,16,321.3778237,9.148111,0,S,,,,,,"refspeed(ref) iteration #1"
+648.exchange2_s,16,320.3831983,9.1765112,0,S,,,,,,"refspeed(ref) iteration #2"
+648.exchange2_s,16,320.431125,9.1751387,1,S,,,,,,"refspeed(ref) iteration #3"
+657.xz_s,16,501.9086613,12.3169821,0,S,,,,,,"refspeed(ref) iteration #1"
+657.xz_s,16,494.5592025,12.5000202,1,S,,,,,,"refspeed(ref) iteration #2"
+657.xz_s,16,493.9292601,12.5159623,0,S,,,,,,"refspeed(ref) iteration #3"
+
+"Selected Results Table"
+
+Benchmark,"Base # Threads","Base Run Time","Base Ratio","Base Selected","Base Status","Peak # Threads","Peak Run Time","Peak Ratio","Peak Selected","Peak Status",Description
+600.perlbench_s,16,348.8751408,5.0877801,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+602.gcc_s,16,494.5662528,8.0514996,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+605.mcf_s,16,576.5688866,8.1880936,1,S,,,,,NR,"SelectedIteration (base #3; peak NR)"
+620.omnetpp_s,16,475.7674872,3.4281451,1,S,,,,,NR,"SelectedIteration (base #3; peak NR)"
+623.xalancbmk_s,16,239.6952547,5.9116731,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+625.x264_s,16,215.1066939,8.2005816,1,S,,,,,NR,"SelectedIteration (base #3; peak NR)"
+631.deepsjeng_s,16,348.8521687,4.1077572,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+641.leela_s,16,483.0252586,3.5319064,1,S,,,,,NR,"SelectedIteration (base #3; peak NR)"
+648.exchange2_s,16,320.431125,9.1751387,1,S,,,,,NR,"SelectedIteration (base #3; peak NR)"
+657.xz_s,16,494.5592025,12.5000202,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+
+SPECspeed2017_int_base,6.2623011,,6.2623011
+SPECspeed2017_int_peak,"Not Run",,,,,,,"Not Run"
+
+"Run number:",058
+"runcpu command:","C:\cpu2017\bin\harness\runcpu -c teste1-VisualStudio-windows.cfg --reportable --iterations=5 --threads=16 intspeed"
+"output root:","not used"
+
+"Hardware Vendor:","My Corporation"
+"Hardware Model:","C62 LIV"
+"Date tested:",May-2023
+"CPU2017 License:","nnn (Your SPEC license number)"
+"Test sponsor:","My Corporation"
+"Tested by:","My Corporation"
+"Hardware avail:",
+"Software avail:",
+
+
+HARDWARE
+
+"CPU Name","Intel Core i7-10750H"
+"  Max MHz"," "
+"  Nominal"," "
+Enabled,"6 cores, 1 chip, 2 threads/core"
+Orderable," "
+"Cache L1"," "
+"  L2"," "
+"  L3"," "
+"  Other"," "
+Memory,"16 GB (2 x 8 GB nRxn PCn-2667T) ** fixme **"
+," "
+," "
+Storage," "
+Other," "
+
+SOFTWARE
+
+OS,"Microsoft Windows 11 Home Single Language (64-bit)"
+,"Build 10.0.22621"
+Compiler,"C/C++: Version 19.21.27702.2 of Microsoft"
+,"Visual Studio 2019"
+Parallel,Yes
+Firmware," "
+"File System"," "
+"System State"," "
+"Base Pointers",64-bit
+"Peak Pointers","Not Applicable"
+Other," "
+"Power Management",--
+
+"Platform Notes"
+
+
+" Sysinfo program C:/cpu2017/bin/sysinfo"
+" Rev: r6365 of 2019-08-21 295195f888a3d7edb1e6e46a485a0011"
+" running on DESKTOP-0GTK0NB Fri May 26 00:25:47 2023"
+
+" SUT (System Under Test) info as seen by some common utilities."
+" For more information on this section, see"
+"    https://www.spec.org/cpu2017/Docs/config.html#sysinfo"
+
+" System"
+" ...wmic computersystem, wmic bios"
+" Manufacturer  : Avell High Performance"
+" Model         : C62 LIV"
+" BIOS          : American Megatrends Inc. N.1.02, 07/17/2020"
+
+" OS"
+" ...wmic os"
+" Caption       : Microsoft Windows 11 Home Single Language"
+" OSArchitecture: 64-bit"
+" Version       : 10.0.22621"
+
+" CPU"
+" ...wmic cpu"
+" Name          : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz"
+"               : (1 chip)"
+" L2CacheSize   : 1536"
+" L3CacheSize   : 12288"
+" MaxClockSpeed : 2592"
+" NumberOfCores : 6"
+" NumberOfLogicalProcessors: 12"
+
+" Memory"
+" ...wmic memorychip"
+"    2 x 04CB AM1P26KC8T1-BAAS 8 GB (8589934592) at 2667"
+" Total Memory  : 16 GB"
+
+" Disks"
+" ...wmic diskdrive"
+" IM2P33F8BR2-512GB 476 GB"
+
+" (End of data from sysinfo program)"
+
+"Compiler Version Notes"
+
+==============================================================================
+"C       | 600.perlbench_s(base) 602.gcc_s(base) 605.mcf_s(base)"
+"        | 625.x264_s(base) 657.xz_s(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30148 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"C++     | 620.omnetpp_s(base) 623.xalancbmk_s(base) 631.deepsjeng_s(base)"
+"        | 641.leela_s(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30148 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"Fortran | 648.exchange2_s(base)"
+------------------------------------------------------------------------------
+"Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on"
+"  Intel(R) 64, Version 2021.9.0 Build 20230302_000000"
+"Copyright (C) 1985-2023 Intel Corporation.  All rights reserved."
+"ifort: command line remark #10010: option '/Qvc14.1' is deprecated and will"
+"  be removed in a future release. See '/help deprecated'"
+"ifort: command line warning #10034: Unrecognized keyword 'INTEL64' for option"
+"  '/favor'"
+------------------------------------------------------------------------------
+
+"Base Runtime Environment"
+600.perlbench_s," No flags used"
+602.gcc_s," No flags used"
+605.mcf_s," No flags used"
+620.omnetpp_s," No flags used"
+623.xalancbmk_s," No flags used"
+625.x264_s," No flags used"
+631.deepsjeng_s," No flags used"
+641.leela_s," No flags used"
+648.exchange2_s," No flags used"
+657.xz_s," No flags used"
+
+"Base Compiler Invocation"
+600.perlbench_s," cl"," cl"
+602.gcc_s," cl"," cl"
+605.mcf_s," cl"," cl"
+620.omnetpp_s," cl"," cl"
+623.xalancbmk_s," cl"," cl"
+625.x264_s," cl"," cl"
+631.deepsjeng_s," cl"," cl"
+641.leela_s," cl"," cl"
+648.exchange2_s," ifort"," -Qvc14.1"," -Qm64"," ifort"," -Qvc14.1"," -Qm64"
+657.xz_s," cl"," cl"
+
+"Base Portability Flags"
+600.perlbench_s," /DSPEC_P64"," -DSPEC_WIN64"
+602.gcc_s," /DSPEC_P64"
+605.mcf_s," /DSPEC_P64"
+620.omnetpp_s," /DSPEC_P64"
+623.xalancbmk_s," /DSPEC_P64"," -Zc:wchar_t-"
+625.x264_s," /DSPEC_P64"," -DSPEC_WINDOWS_MSVS2013"
+631.deepsjeng_s," /DSPEC_P64"
+641.leela_s," /DSPEC_P64"," -DBOOST_HAS_TR1_ARRAY"
+648.exchange2_s," /DSPEC_P64"
+657.xz_s," /DSPEC_P64"," -DSPEC_NO_SSIZE_T"," -Drestrict=__restrict"
+
+"Base Optimization Flags"
+600.perlbench_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+602.gcc_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+605.mcf_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+620.omnetpp_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+623.xalancbmk_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+625.x264_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+631.deepsjeng_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+641.leela_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+648.exchange2_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /DSPEC_OPENMP"," /Qpar"," /openmp"
+657.xz_s," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /Qpar"," /DSPEC_OPENMP"," /openmp"
+
+"Base Other Flags"
+600.perlbench_s," /TC"
+602.gcc_s," /TC"
+605.mcf_s," /TC"
+620.omnetpp_s," /TP"
+623.xalancbmk_s," /TP"
+625.x264_s," /TC"
+631.deepsjeng_s," /TP"
+641.leela_s," /TP"
+648.exchange2_s," No flags used"
+657.xz_s," /TC"
+
+"Base Forbidden Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Base Unknown Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Runtime Environment"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Compiler Invocation"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Portability Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Optimization Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Other Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Forbidden Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+
+"Peak Unknown Flags"
+600.perlbench_s
+602.gcc_s
+605.mcf_s
+620.omnetpp_s
+623.xalancbmk_s
+625.x264_s
+631.deepsjeng_s
+641.leela_s
+648.exchange2_s
+657.xz_s
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",info@spec.org.,
+"Copyright 2017-2023 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC CPU2017",v1.1.0.
+"Result run on","2023-05-26 00:25:42Hora oficial do Brasil."
+"Report generated on","2023-05-26 04:03:46","by SPEC CPU2017 CSV","formatter v6253."

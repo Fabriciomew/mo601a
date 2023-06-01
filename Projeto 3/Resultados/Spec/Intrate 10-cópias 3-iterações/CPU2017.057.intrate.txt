@@ -1,0 +1,245 @@
+                                               SPEC CPU(R)2017 Integer Rate Result
+                                                      My Corporation C62 LIV
+
+                           CPU2017 License: nnn (Your SPEC license number)          Test date: May-2023
+                           Test sponsor: My Corporation                 Hardware availability:         
+                           Tested by:    My Corporation                 Software availability:         
+
+                 Base     Base        Base        Peak     Peak        Peak
+Benchmarks       Copies  Run Time     Rate        Copies  Run Time     Rate 
+--------------- -------  ---------  ---------    -------  ---------  ---------
+500.perlbench_r      10        645       24.7  S
+500.perlbench_r      10        634       25.1  *
+500.perlbench_r      10        634       25.1  S
+502.gcc_r            10        581       24.4  S
+502.gcc_r            10        589       24.0  S
+502.gcc_r            10        584       24.3  *
+505.mcf_r            10        871       18.5  *
+505.mcf_r            10        872       18.5  S
+505.mcf_r            10        869       18.6  S
+520.omnetpp_r        10       1072       12.2  *
+520.omnetpp_r        10       1070       12.3  S
+520.omnetpp_r        10       1078       12.2  S
+523.xalancbmk_r      10        507       20.8  S
+523.xalancbmk_r      10        509       20.7  S
+523.xalancbmk_r      10        508       20.8  *
+525.x264_r           10        302       58.0  S
+525.x264_r           10        301       58.2  *
+525.x264_r           10        301       58.2  S
+531.deepsjeng_r      10        464       24.7  S
+531.deepsjeng_r      10        464       24.7  *
+531.deepsjeng_r      10        463       24.7  S
+541.leela_r          10        723       22.9  S
+541.leela_r          10        723       22.9  *
+541.leela_r          10        722       22.9  S
+548.exchange2_r      10        500       52.4  S
+548.exchange2_r      10        500       52.4  S
+548.exchange2_r      10        500       52.4  *
+557.xz_r             10        548       19.7  *
+557.xz_r             10        547       19.7  S
+557.xz_r             10        551       19.6  S
+=================================================================================
+500.perlbench_r      10        634       25.1  *
+502.gcc_r            10        584       24.3  *
+505.mcf_r            10        871       18.5  *
+520.omnetpp_r        10       1072       12.2  *
+523.xalancbmk_r      10        508       20.8  *
+525.x264_r           10        301       58.2  *
+531.deepsjeng_r      10        464       24.7  *
+541.leela_r          10        723       22.9  *
+548.exchange2_r      10        500       52.4  *
+557.xz_r             10        548       19.7  *
+ SPECrate(R)2017_int_base                25.1
+ SPECrate(R)2017_int_peak                                              Not Run
+
+
+                                                             HARDWARE
+                                                             --------
+            CPU Name: Intel Core i7-10750H
+             Max MHz:  
+             Nominal:  
+             Enabled: 6 cores, 1 chip, 2 threads/core
+           Orderable:  
+            Cache L1:  
+                  L2:  
+                  L3:  
+               Other:  
+              Memory: 16 GB (2 x 8 GB nRxn PCn-2667T) ** fixme **
+                       
+                       
+             Storage:  
+               Other:  
+
+
+                                                             SOFTWARE
+                                                             --------
+                  OS: Microsoft Windows 11 Home Single Language (64-bit)
+                      Build 10.0.22621
+            Compiler: C/C++: Version 19.21.27702.2 of Microsoft
+                      Visual Studio 2019
+            Parallel: No
+            Firmware:  
+         File System:  
+        System State:  
+       Base Pointers: 64-bit
+       Peak Pointers: Not Applicable
+               Other:  
+    Power Management: --
+
+
+                                                          Platform Notes
+                                                          --------------
+    
+     Sysinfo program C:/cpu2017/bin/sysinfo
+     Rev: r6365 of 2019-08-21 295195f888a3d7edb1e6e46a485a0011
+     running on DESKTOP-0GTK0NB Thu May 25 01:30:08 2023
+    
+     SUT (System Under Test) info as seen by some common utilities.
+     For more information on this section, see
+        https://www.spec.org/cpu2017/Docs/config.html#sysinfo
+    
+     System
+     ...wmic computersystem, wmic bios
+     Manufacturer  : Avell High Performance
+     Model         : C62 LIV
+     BIOS          : American Megatrends Inc. N.1.02, 07/17/2020
+    
+     OS
+     ...wmic os
+     Caption       : Microsoft Windows 11 Home Single Language
+     OSArchitecture: 64-bit
+     Version       : 10.0.22621
+    
+     CPU
+     ...wmic cpu
+     Name          : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+                   : (1 chip)
+     L2CacheSize   : 1536
+     L3CacheSize   : 12288
+     MaxClockSpeed : 2592
+     NumberOfCores : 6
+     NumberOfLogicalProcessors: 12
+    
+     Memory
+     ...wmic memorychip
+        2 x 04CB AM1P26KC8T1-BAAS 8 GB (8589934592) at 2667
+     Total Memory  : 16 GB
+    
+     Disks
+     ...wmic diskdrive
+     IM2P33F8BR2-512GB 476 GB
+    
+     (End of data from sysinfo program)
+
+                                                      Compiler Version Notes
+                                                      ----------------------
+    ==============================================================================
+    C       | 502.gcc_r(base)
+    ------------------------------------------------------------------------------
+    Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30148 para x64
+    Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+    cl : Linha de comando error D8003 : faltando nome de arquivo fonte
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+    C       | 500.perlbench_r(base) 505.mcf_r(base) 525.x264_r(base)
+            | 557.xz_r(base)
+    ------------------------------------------------------------------------------
+    Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32532 para x64
+    Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+    cl : Linha de comando error D8003 : faltando nome de arquivo fonte
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+    C       | 502.gcc_r(base)
+    ------------------------------------------------------------------------------
+    Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30148 para x64
+    Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+    cl : Linha de comando error D8003 : faltando nome de arquivo fonte
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+    C       | 500.perlbench_r(base) 505.mcf_r(base) 525.x264_r(base)
+            | 557.xz_r(base)
+    ------------------------------------------------------------------------------
+    Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32532 para x64
+    Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+    cl : Linha de comando error D8003 : faltando nome de arquivo fonte
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+    C++     | 520.omnetpp_r(base) 523.xalancbmk_r(base) 531.deepsjeng_r(base)
+            | 541.leela_r(base)
+    ------------------------------------------------------------------------------
+    Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32532 para x64
+    Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+    cl : Linha de comando error D8003 : faltando nome de arquivo fonte
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+    Fortran | 548.exchange2_r(base)
+    ------------------------------------------------------------------------------
+    Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on
+      Intel(R) 64, Version 2021.9.0 Build 20230302_000000
+    Copyright (C) 1985-2023 Intel Corporation.  All rights reserved.
+    ifort: command line remark #10010: option '/Qvc14.1' is deprecated and will
+      be removed in a future release. See '/help deprecated'
+    ifort: command line warning #10034: Unrecognized keyword 'INTEL64' for option
+      '/favor'
+    ------------------------------------------------------------------------------
+
+                                                     Base Compiler Invocation
+                                                     ------------------------
+C benchmarks: 
+     cl
+
+C++ benchmarks: 
+     cl
+
+Fortran benchmarks: 
+     ifort -Qvc14.1 -Qm64
+
+
+                                                      Base Portability Flags
+                                                      ----------------------
+ 500.perlbench_r: /DSPEC_P64 -DSPEC_WIN64
+       502.gcc_r: /DSPEC_P64
+       505.mcf_r: /DSPEC_P64
+   520.omnetpp_r: /DSPEC_P64
+ 523.xalancbmk_r: /DSPEC_P64 -Zc:wchar_t-
+      525.x264_r: /DSPEC_P64 -DSPEC_WINDOWS_MSVS2013
+ 531.deepsjeng_r: /DSPEC_P64
+     541.leela_r: /DSPEC_P64 -DBOOST_HAS_TR1_ARRAY
+ 548.exchange2_r: /DSPEC_P64
+        557.xz_r: /DSPEC_P64 -DSPEC_NO_SSIZE_T -Drestrict=__restrict
+
+
+                                                     Base Optimization Flags
+                                                     -----------------------
+C benchmarks: 
+     /F1500000 /Zi /O2 /arch:AVX2 /favor:INTEL64
+
+C++ benchmarks: 
+     /F1500000 /Zi /O2 /arch:AVX2 /favor:INTEL64 /EHsc
+
+Fortran benchmarks: 
+     /F1500000 /Zi /O2 /arch:AVX2 /favor:INTEL64
+
+
+                                                         Base Other Flags
+                                                         ----------------
+C benchmarks: 
+     /TC
+
+C++ benchmarks: 
+     /TP
+
+
+  SPEC CPU and SPECrate are registered trademarks of the Standard Performance Evaluation Corporation.  All other brand and
+    product names appearing in this result are trademarks or registered trademarks of their respective holders.
+----------------------------------------------------------------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact info@spec.org.
+Copyright 2017-2023 Standard Performance Evaluation Corporation
+Tested with SPEC CPU(R)2017 v1.1.0 on 2023-05-25 01:30:05Hora oficial do Brasil.
+Report generated on 2023-05-25 06:57:13 by CPU2017 text formatter v6255.

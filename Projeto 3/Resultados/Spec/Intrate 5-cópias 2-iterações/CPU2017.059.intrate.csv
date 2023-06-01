@@ -1,0 +1,366 @@
+valid,1
+
+"SPEC CPU2017 Integer Rate Result"
+
+"Full Results Table"
+
+Benchmark,"Base # Copies","Base Run Time","Base Rate","Base Selected","Base Status","Peak # Copies","Peak Run Time","Peak Rate","Peak Selected","Peak Status",Description
+500.perlbench_r,5,538.8425057,14.7724055,1,S,,,,,,"refrate(ref) iteration #1"
+500.perlbench_r,5,537.8618753,14.7993385,0,S,,,,,,"refrate(ref) iteration #2"
+502.gcc_r,5,410.9611614,17.2279055,1,S,,,,,,"refrate(ref) iteration #1"
+502.gcc_r,5,410.4472284,17.249477,0,S,,,,,,"refrate(ref) iteration #2"
+505.mcf_r,5,516.9361153,15.630558,0,S,,,,,,"refrate(ref) iteration #1"
+505.mcf_r,5,518.2407374,15.5912095,1,S,,,,,,"refrate(ref) iteration #2"
+520.omnetpp_r,5,840.0319707,7.8092265,1,S,,,,,,"refrate(ref) iteration #1"
+520.omnetpp_r,5,835.7448232,7.849286,0,S,,,,,,"refrate(ref) iteration #2"
+523.xalancbmk_r,5,389.1071417,13.5695275,0,S,,,,,,"refrate(ref) iteration #1"
+523.xalancbmk_r,5,390.857877,13.5087465,1,S,,,,,,"refrate(ref) iteration #2"
+525.x264_r,5,257.7521577,33.966738,1,S,,,,,,"refrate(ref) iteration #1"
+525.x264_r,5,256.8391235,34.087486,0,S,,,,,,"refrate(ref) iteration #2"
+531.deepsjeng_r,5,407.7586548,14.05243,1,S,,,,,,"refrate(ref) iteration #1"
+531.deepsjeng_r,5,407.2546747,14.06982,0,S,,,,,,"refrate(ref) iteration #2"
+541.leela_r,5,658.631474,12.571522,1,S,,,,,,"refrate(ref) iteration #1"
+541.leela_r,5,657.5502138,12.592194,0,S,,,,,,"refrate(ref) iteration #2"
+548.exchange2_r,5,430.289999,30.444584,0,S,,,,,,"refrate(ref) iteration #1"
+548.exchange2_r,5,430.7100966,30.4148895,1,S,,,,,,"refrate(ref) iteration #2"
+557.xz_r,5,474.5600867,11.3789595,1,S,,,,,,"refrate(ref) iteration #1"
+557.xz_r,5,474.0076673,11.392221,0,S,,,,,,"refrate(ref) iteration #2"
+
+"Selected Results Table"
+
+Benchmark,"Base # Copies","Base Run Time","Base Rate","Base Selected","Base Status","Peak # Copies","Peak Run Time","Peak Rate","Peak Selected","Peak Status",Description
+500.perlbench_r,5,538.8425057,14.7724055,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+502.gcc_r,5,410.9611614,17.2279055,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+505.mcf_r,5,518.2407374,15.5912095,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+520.omnetpp_r,5,840.0319707,7.8092265,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+523.xalancbmk_r,5,390.857877,13.5087465,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+525.x264_r,5,257.7521577,33.966738,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+531.deepsjeng_r,5,407.7586548,14.05243,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+541.leela_r,5,658.631474,12.571522,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+548.exchange2_r,5,430.7100966,30.4148895,1,S,,,,,NR,"SelectedIteration (base #2; peak NR)"
+557.xz_r,5,474.5600867,11.3789595,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+
+SPECrate2017_int_base,15.6284839,,15.6284839
+SPECrate2017_int_peak,"Not Run",,,,,,,"Not Run"
+
+"Run number:",059
+"runcpu command:","C:\cpu2017\bin\harness\runcpu -c teste1-VisualStudio-windows.cfg --reportable --iterations=2 --copies=5 intrate"
+"output root:","not used"
+
+"Hardware Vendor:","My Corporation"
+"Hardware Model:","C62 LIV"
+"Date tested:",May-2023
+"CPU2017 License:","nnn (Your SPEC license number)"
+"Test sponsor:","My Corporation"
+"Tested by:","My Corporation"
+"Hardware avail:",
+"Software avail:",
+
+
+HARDWARE
+
+"CPU Name","Intel Core i7-10750H"
+"  Max MHz"," "
+"  Nominal"," "
+Enabled,"6 cores, 1 chip, 2 threads/core"
+Orderable," "
+"Cache L1"," "
+"  L2"," "
+"  L3"," "
+"  Other"," "
+Memory,"16 GB (2 x 8 GB nRxn PCn-2667T) ** fixme **"
+," "
+," "
+Storage," "
+Other," "
+
+SOFTWARE
+
+OS,"Microsoft Windows 11 Home Single Language (64-bit)"
+,"Build 10.0.22621"
+Compiler,"C/C++: Version 19.21.27702.2 of Microsoft"
+,"Visual Studio 2019"
+Parallel,No
+Firmware," "
+"File System"," "
+"System State"," "
+"Base Pointers",64-bit
+"Peak Pointers","Not Applicable"
+Other," "
+"Power Management",--
+
+"Platform Notes"
+
+
+" Sysinfo program C:/cpu2017/bin/sysinfo"
+" Rev: r6365 of 2019-08-21 295195f888a3d7edb1e6e46a485a0011"
+" running on DESKTOP-0GTK0NB Sat May 27 00:00:16 2023"
+
+" SUT (System Under Test) info as seen by some common utilities."
+" For more information on this section, see"
+"    https://www.spec.org/cpu2017/Docs/config.html#sysinfo"
+
+" System"
+" ...wmic computersystem, wmic bios"
+" Manufacturer  : Avell High Performance"
+" Model         : C62 LIV"
+" BIOS          : American Megatrends Inc. N.1.02, 07/17/2020"
+
+" OS"
+" ...wmic os"
+" Caption       : Microsoft Windows 11 Home Single Language"
+" OSArchitecture: 64-bit"
+" Version       : 10.0.22621"
+
+" CPU"
+" ...wmic cpu"
+" Name          : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz"
+"               : (1 chip)"
+" L2CacheSize   : 1536"
+" L3CacheSize   : 12288"
+" MaxClockSpeed : 2592"
+" NumberOfCores : 6"
+" NumberOfLogicalProcessors: 12"
+
+" Memory"
+" ...wmic memorychip"
+"    2 x 04CB AM1P26KC8T1-BAAS 8 GB (8589934592) at 2667"
+" Total Memory  : 16 GB"
+
+" Disks"
+" ...wmic diskdrive"
+" IM2P33F8BR2-512GB 476 GB"
+
+" (End of data from sysinfo program)"
+
+"Compiler Version Notes"
+
+==============================================================================
+"C       | 502.gcc_r(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30148 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"C       | 500.perlbench_r(base) 505.mcf_r(base) 525.x264_r(base)"
+"        | 557.xz_r(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32532 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"C       | 502.gcc_r(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30148 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"C       | 500.perlbench_r(base) 505.mcf_r(base) 525.x264_r(base)"
+"        | 557.xz_r(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32532 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"C++     | 520.omnetpp_r(base) 523.xalancbmk_r(base) 531.deepsjeng_r(base)"
+"        | 541.leela_r(base)"
+------------------------------------------------------------------------------
+"Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32532 para x64"
+"Copyright (C) Microsoft Corporation. Todos os direitos reservados."
+"cl : Linha de comando error D8003 : faltando nome de arquivo fonte"
+------------------------------------------------------------------------------
+
+==============================================================================
+"Fortran | 548.exchange2_r(base)"
+------------------------------------------------------------------------------
+"Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on"
+"  Intel(R) 64, Version 2021.9.0 Build 20230302_000000"
+"Copyright (C) 1985-2023 Intel Corporation.  All rights reserved."
+"ifort: command line remark #10010: option '/Qvc14.1' is deprecated and will"
+"  be removed in a future release. See '/help deprecated'"
+"ifort: command line warning #10034: Unrecognized keyword 'INTEL64' for option"
+"  '/favor'"
+------------------------------------------------------------------------------
+
+"Base Runtime Environment"
+500.perlbench_r," No flags used"
+502.gcc_r," No flags used"
+505.mcf_r," No flags used"
+520.omnetpp_r," No flags used"
+523.xalancbmk_r," No flags used"
+525.x264_r," No flags used"
+531.deepsjeng_r," No flags used"
+541.leela_r," No flags used"
+548.exchange2_r," No flags used"
+557.xz_r," No flags used"
+
+"Base Compiler Invocation"
+500.perlbench_r," cl"," cl"
+502.gcc_r," cl"," cl"
+505.mcf_r," cl"," cl"
+520.omnetpp_r," cl"," cl"
+523.xalancbmk_r," cl"," cl"
+525.x264_r," cl"," cl"
+531.deepsjeng_r," cl"," cl"
+541.leela_r," cl"," cl"
+548.exchange2_r," ifort"," -Qvc14.1"," -Qm64"," ifort"," -Qvc14.1"," -Qm64"
+557.xz_r," cl"," cl"
+
+"Base Portability Flags"
+500.perlbench_r," /DSPEC_P64"," -DSPEC_WIN64"
+502.gcc_r," /DSPEC_P64"
+505.mcf_r," /DSPEC_P64"
+520.omnetpp_r," /DSPEC_P64"
+523.xalancbmk_r," /DSPEC_P64"," -Zc:wchar_t-"
+525.x264_r," /DSPEC_P64"," -DSPEC_WINDOWS_MSVS2013"
+531.deepsjeng_r," /DSPEC_P64"
+541.leela_r," /DSPEC_P64"," -DBOOST_HAS_TR1_ARRAY"
+548.exchange2_r," /DSPEC_P64"
+557.xz_r," /DSPEC_P64"," -DSPEC_NO_SSIZE_T"," -Drestrict=__restrict"
+
+"Base Optimization Flags"
+500.perlbench_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"
+502.gcc_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"
+505.mcf_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"
+520.omnetpp_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"
+523.xalancbmk_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"
+525.x264_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"
+531.deepsjeng_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"
+541.leela_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"," /EHsc"
+548.exchange2_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"
+557.xz_r," /F1500000"," /Zi"," /O2"," /arch:AVX2"," /favor:INTEL64"
+
+"Base Other Flags"
+500.perlbench_r," /TC"
+502.gcc_r," /TC"
+505.mcf_r," /TC"
+520.omnetpp_r," /TP"
+523.xalancbmk_r," /TP"
+525.x264_r," /TC"
+531.deepsjeng_r," /TP"
+541.leela_r," /TP"
+548.exchange2_r," No flags used"
+557.xz_r," /TC"
+
+"Base Forbidden Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Base Unknown Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Runtime Environment"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Compiler Invocation"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Portability Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Optimization Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Other Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Forbidden Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+
+"Peak Unknown Flags"
+500.perlbench_r
+502.gcc_r
+505.mcf_r
+520.omnetpp_r
+523.xalancbmk_r
+525.x264_r
+531.deepsjeng_r
+541.leela_r
+548.exchange2_r
+557.xz_r
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",info@spec.org.,
+"Copyright 2017-2023 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC CPU2017",v1.1.0.
+"Result run on","2023-05-27 00:00:13Hora oficial do Brasil."
+"Report generated on","2023-05-27 02:58:22","by SPEC CPU2017 CSV","formatter v6253."
