@@ -1,0 +1,46 @@
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0                26              7       0.26923
+
+                 TIMING INFORMATION
+Start time                        :      -1346588130
+Initialization finish time        :      -1346588022
+Overall finish time               :      -1346587996
+Total time with initialization    :              134
+Total time without initialization :               26
+Overall transpose time            :                7
+Overall transpose fraction        :          0.26923
+
+Performance counter stats for './benchmarks/FFT':
+
+              0,42 msec task-clock                #    0,633 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               102      page-faults               #    0,245 M/sec                  
+         1.785.176      cycles                    #    4,282 GHz                    
+         1.968.421      instructions              #    1,10  insn per cycle         
+           320.137      branches                  #  767,915 M/sec                  
+            10.076      branch-misses             #    3,15% of all branches        
+
+       0,000658917 seconds time elapsed
+
+       0,000654000 seconds user
+       0,000000000 seconds sys
+
+
+
+real	0m0,062s
+user	0m0,009s
+sys	0m0,012s

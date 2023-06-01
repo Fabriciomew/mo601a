@@ -1,0 +1,27 @@
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          22270           10674            8128
+
+                 TIMING INFORMATION
+Start time                        :      -1026274038
+Initialization finish time        :      -1026163235
+Overall finish time               :      -1026140965
+Total time with initialization    :           133073
+Total time without initialization :            22270
+
+Count 46704089
+
+real	0m0,423s
+user	0m0,321s
+sys	0m0,078s

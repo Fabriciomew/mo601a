@@ -1,0 +1,45 @@
+[SNIPER] Start
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running full application in DETAILED mode
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0                62              5       0.08065
+
+                 TIMING INFORMATION
+Start time                        :      -1844408170
+Initialization finish time        :      -1844408022
+Overall finish time               :      -1844407960
+Total time with initialization    :              210
+Total time without initialization :               62
+Overall transpose time            :                5
+Overall transpose fraction        :          0.08065
+
+[TRACE:0] -- DONE --
+[RECORD-TRACE] Using the Pin frontend (sift/recorder)
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 4.73 seconds
+[SNIPER] Simulated 1.0M instructions, 1.0M cycles, 1.03 IPC
+[SNIPER] Simulation speed 216.8 KIPS (216.8 KIPS / target core - 4611.5ns/instr)
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[SNIPER] End
+[SNIPER] Elapsed time: 4.90 seconds
+
+real	0m5,066s
+user	0m2,821s
+sys	0m0,430s

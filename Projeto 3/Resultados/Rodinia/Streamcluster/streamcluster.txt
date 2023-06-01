@@ -1,0 +1,44 @@
+PARSEC Benchmark Suite
+read 16384 points
+time = 2.122909
+time pgain = 1.955699
+time pgain_dist = 1.888417
+time pgain_init = 0.025538
+time pselect = 0.000046
+time pspeedy = 0.136102
+time pshuffle = 0.000908
+time localSearch = 2.096530
+loops=6
+PARSEC Benchmark Suite
+read 32768 points
+time = 5.240037
+time pgain = 4.770325
+time pgain_dist = 4.665656
+time pgain_init = 0.056382
+time pselect = 0.000096
+time pspeedy = 0.412560
+time pshuffle = 0.001964
+time localSearch = 5.192366
+loops=7
+PARSEC Benchmark Suite
+read 65536 points
+time = 9.227180
+time pgain = 8.773663
+time pgain_dist = 8.579755
+time pgain_init = 0.099229
+time pselect = 0.000163
+time pspeedy = 0.341555
+time pshuffle = 0.003232
+time localSearch = 9.133414
+loops=7
+PARSEC Benchmark Suite
+read 131072 points
+time = 19.621796
+time pgain = 18.099952
+time pgain_dist = 17.643507
+time pgain_init = 0.199185
+time pselect = 0.000296
+time pspeedy = 1.300186
+time pshuffle = 0.009496
+time localSearch = 19.439399
+loops=6

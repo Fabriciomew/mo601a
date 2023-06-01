@@ -1,0 +1,62 @@
+[SNIPER] Start
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running full application in DETAILED mode
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+503 supers, 3.59 nodes/super, 135 max super
+503/193 supers before/after
+9795237/10681750 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 41 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+409 max height, 10681750 ops, 8705.58 conc, 93.30 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+10681750 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          2792
+                            TIMING INFORMATION
+Start time                        :      -1844408167
+Initialization finish time        :      -1844403753
+Overall finish time               :      -1844400961
+Total time with initialization    :             7206
+Total time without initialization :             2792
+
+[TRACE:0] -- DONE --
+[RECORD-TRACE] Using the Pin frontend (sift/recorder)
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 42.03 seconds
+[SNIPER] Simulated 43.5M instructions, 19.6M cycles, 2.22 IPC
+[SNIPER] Simulation speed 1034.6 KIPS (1034.6 KIPS / target core - 966.5ns/instr)
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[SNIPER] End
+[SNIPER] Elapsed time: 42.19 seconds
+
+real	0m43,146s
+user	0m39,873s
+sys	0m1,378s
+

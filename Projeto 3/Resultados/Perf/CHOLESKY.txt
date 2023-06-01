@@ -1,0 +1,64 @@
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+503 supers, 3.59 nodes/super, 135 max super
+503/193 supers before/after
+9795237/10681750 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 41 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+409 max height, 10681750 ops, 8705.58 conc, 93.30 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+10681750 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          1485
+                            TIMING INFORMATION
+Start time                        :      -1101735960
+Initialization finish time        :      -1101733483
+Overall finish time               :      -1101731998
+Total time with initialization    :             3962
+Total time without initialization :             1485
+
+Performance counter stats for './benchmarks/CHOLESKY benchmarks/inputs/tk14.O':
+
+              4,27 msec task-clock                #    0,941 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               657      page-faults               #    0,154 M/sec                  
+        19.855.063      cycles                    #    4,654 GHz                    
+        45.328.916      instructions              #    2,28  insn per cycle         
+         5.796.998      branches                  # 1358,901 M/sec                  
+           135.774      branch-misses             #    2,34% of all branches        
+
+       0,004533337 seconds time elapsed
+
+       0,004544000 seconds user
+       0,000000000 seconds sys
+
+
+
+real	0m0,051s
+user	0m0,015s
+sys	0m0,010s
+
+

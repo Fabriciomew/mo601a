@@ -1,0 +1,42 @@
+[SNIPER] Start
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running full application in DETAILED mode
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0           2434            1116            1315
+
+                 TIMING INFORMATION
+Start time                        :      -1844408183
+Initialization finish time        :      -1844371456
+Overall finish time               :      -1844369022
+Total time with initialization    :            39161
+Total time without initialization :             2434
+
+[TRACE:0] -- DONE --
+[RECORD-TRACE] Using the Pin frontend (sift/recorder)
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 42.26 seconds
+[SNIPER] Simulated 46.7M instructions, 104.6M cycles, 0.45 IPC
+[SNIPER] Simulation speed 1105.8 KIPS (1105.8 KIPS / target core - 904.3ns/instr)
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[SNIPER] End
+[SNIPER] Elapsed time: 42.37 seconds
+
+real	0m43,127s
+user	0m39,961s
+sys	0m1,103s

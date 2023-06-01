@@ -1,0 +1,47 @@
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+503 supers, 3.59 nodes/super, 135 max super
+503/193 supers before/after
+9795237/10681750 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 41 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+409 max height, 10681750 ops, 8705.58 conc, 93.30 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+10681750 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0         78387
+                            TIMING INFORMATION
+Start time                        :       -920397936
+Initialization finish time        :       -920102097
+Overall finish time               :       -920023710
+Total time with initialization    :           374226
+Total time without initialization :            78387
+
+Count 43462742
+
+real	0m0,629s
+user	0m0,541s
+sys	0m0,085s
+

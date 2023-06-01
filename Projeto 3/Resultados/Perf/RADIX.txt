@@ -1,0 +1,44 @@
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+[HOOKS] Entering ROI
+[HOOKS] Leaving ROI
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0           1168             350             818
+
+                 TIMING INFORMATION
+Start time                        :      -1262623888
+Initialization finish time        :      -1262602879
+Overall finish time               :      -1262601711
+Total time with initialization    :            22177
+Total time without initialization :             1168
+
+Performance counter stats for './benchmarks/RADIX':
+
+             22,45 msec task-clock                #    0,991 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               603      page-faults               #    0,027 M/sec                  
+       104.398.364      cycles                    #    4,651 GHz                    
+        49.286.534      instructions              #    0,47  insn per cycle         
+         1.833.348      branches                  #   81,675 M/sec                  
+            11.228      branch-misses             #    0,61% of all branches        
+
+       0,022657364 seconds time elapsed
+
+       0,018136000 seconds user
+       0,004534000 seconds sys
+
+
+
+real	0m0,077s
+user	0m0,023s
+sys	0m0,020s
+
